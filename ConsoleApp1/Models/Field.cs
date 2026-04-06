@@ -37,7 +37,7 @@
                     }
                     else
                     {
-                        Console.Write(field[i, j]);
+                        Console.Write(field[i][j]);
                     }
                 }
                 Console.WriteLine();
