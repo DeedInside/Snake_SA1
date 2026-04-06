@@ -4,11 +4,15 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        int[,] Field = new int[10,10];
+        int x = 10, y = 10;
+        Field field = new Field(x,y);
         Vector vector = new Vector();
+        Snake snake = new Snake(new Coordinate(2,2), vector);
         bool start = true;
         while (start)
         {
+            Console.Clear();
+            field.Render(snake.Head);
             char ch = Console.ReadKey().KeyChar;
             switch (ch)
             {
